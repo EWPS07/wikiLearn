@@ -1,0 +1,97 @@
+/* HTML ELEMENTS */
+
+body {
+  background-color: #282827;
+  font-family: 'Work Sans', sans-serif;
+}
+
+header,
+footer {
+  color: #DC3D24;
+  font-size: 150%;
+}
+
+a:active,
+a:hover {
+  text-decoration: none;
+}
+
+
+/* CUSTOM CLASSES */
+
+/* CUSTOM ID'S */
+
+#innerWell {
+  background-color: #DCD8CF;
+  color: #282827;
+}
+
+#searchResults,
+#randomResults {
+  margin-top: 5%;
+}
+
+#searchRequest {
+  font-weight: bold;
+  font-style: italic;
+  background-color: #DCD8CF;
+}
+#randomMessage {
+  color: #DCD8CF;
+  margin-top: 5%;
+}
+
+#search {
+  color: #282827F;
+  background-color: #DC3D24;
+  border: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#search:active {
+  color: #DCD8CF;
+}
+
+#searchRequest:focus {
+  border-style: solid;
+  border-color: #DC3D24;
+  border-width: 3px;
+}
+
+
+/* BOOTSTRAP CLASSES */
+
+.input-group-addon {
+  background-color: #DC3D24;
+  border: none;
+}
+
+.glyphicon,
+.glyphicon-search,
+#mainSearch {
+  border-color: #DC3D24;
+  background-color: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+.glyphicon:active,
+.glyphicon-search:active,
+#mainSearch:active,
+.glyphicon:visited,
+.glyphicon-search:visited,
+#mainSearch:visited {
+  color: #DCD8CF;
+  border: none;
+  background-color: #DC3D24;
+}
+
+.well {
+  color: #DC3D24;
+  background-color: #282827;
+  font-size: 125%;
+  border: solid 5px #DC3D24;
+}
