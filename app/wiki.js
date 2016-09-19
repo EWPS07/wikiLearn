@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var baseUrl = 'http://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&grnnamespace=0&prop=extracts&exlimit=max&explaintext&exintro&gsrsearch=';
+  var baseUrl = 'https://en.wikipedia.org/w/api.php?action=query&format=json&generator=search&grnnamespace=0&prop=extracts&exlimit=max&explaintext&exintro&gsrsearch=';
   var callback = '&callback=?';
 
   // User search for topic
@@ -21,7 +21,7 @@ $(document).ready(function() {
   // Grab a random article
   $('#search').on('click', function(e) {
     e.preventDefault();
-    var randomUrl = 'http://en.wikipedia.org/w/api.php?action=query&format=json&generator=random&grnnamespace=0&prop=extracts&exlimit=max&explaintext&exintro&gsrsearch=&callback=?';
+    var randomUrl = 'https://en.wikipedia.org/w/api.php?action=query&format=json&generator=random&grnnamespace=0&prop=extracts&exlimit=max&explaintext&exintro&gsrsearch=&callback=?';
     $.getJSON(randomUrl, function(json) {
       $('#randomResults').children().remove();
       $.each(json.query.pages, function(key, page) {
